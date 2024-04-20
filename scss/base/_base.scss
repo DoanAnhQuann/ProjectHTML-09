@@ -1,0 +1,32 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Gordita", sans-serif;
+    user-select: none;
+}
+body {
+    font-size: 1.6rem;
+}
+a {
+    text-decoration: none;
+}
+button,
+input,
+textarea,
+select {
+    color: inherit;
+    font-family: inherit;
+}
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.icon{
+    filter: var(--icon-color);
+}

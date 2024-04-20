@@ -1,0 +1,20 @@
+@use "../abstracts";
+html.dark {
+    --Secondary-Color-Secondary-1: #ffffff;
+    --icon-color: brightness(0) saturate(100%) invert(98%) sepia(0%)
+        saturate(2417%) hue-rotate(259deg) brightness(116%) contrast(100%);
+    --bg-color-header: #171C28;
+    --top-action-color: #292E39;
+    --top-action-separate:#EDEDF6;
+    --top-action-shadow: rgba(0, 0, 0, 0.2);
+    --bg-drop-inner:#292E39;
+    --box-shadow-inner:rgba(23, 28, 40, 0.40);
+    --bg-color-img-2-1:#292E39;
+    --dropinner-text:#B9BABE;
+    .triagle{
+        display: none;
+    }
+    @include abstracts.breakpoint(sm){
+        --bg-color-header: #171C28;
+    }
+}
