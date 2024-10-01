@@ -1,0 +1,24 @@
+.card__control {
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 20px 725px 20px 20px;
+    background: var(--Secondary-Color-Background, #fff);
+    box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+    .card__body {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+    .card__home {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+    }
+    .card__desc {
+        color: var(--Secondary-Color-Secondary-2, #9e9da8);
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+    }
+}

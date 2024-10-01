@@ -1,193 +1,196 @@
 <div class="container">
     <div class="body__bar">
-        <button class="more js-toggle" toggle-target="#navbar-mobile">
+        <label for="open" class="more">
+            <input type="radio" name="open" id="open" hidden>
             <img src="./assets/icon/more.svg" alt="" class="icon icon__more">
-        </button> 
-        <!-- logo -->
-        <a href="#!" class="logo">
-            <img src="./assets/icon/Icon.svg" alt="grocerymart" class="img__logo" />
-            <h1 class="logo__header">grocerymart</h1>
-        </a>
+        </label> 
         <!-- nav-mobile-tablet -->
-        <div class="overlay__mobile"></div>  
-        <div id="navbar-mobile" class="nav__mobile">
-            <div class="nav__mobile--maintop">
-                <button>
-                    <img src="./assets/icon/back.svg" alt="back" class="icon nav__mobile--icon1">
-                </button>
-            </div>
-         <!-- nav-mobile-tablet -->
-           <div class="nav__mobile--main">
-                <!-- item1 -->
-                <div class="nav__mobile--card">
-                   <button class="nav__mobile--btn">
-                        <img src="./assets/icon/buy.svg" alt="" class="icon nav__mobile--icon2">
-                        <span class="nav__mobile--title">Card</span>
-                   </button>
-                   <span class="nav__mobile--title">3</span>
+        <label for="overlay" class="overlay__mobile">
+            <input type="radio" name="open" id="overlay">
+        </label>  
+        <div class="nav__mobile">
+                <div class="nav__mobile--maintop">
+                    <label for="overlay">
+                        <img src="./assets/icon/back.svg" alt="back" class="icon nav__mobile--icon1">
+                    </label>
                 </div>
-                <!-- item2 -->
+             <!-- nav-mobile-tablet -->
+               <div class="nav__mobile--main">
+                    <!-- item1 -->
+                    <div class="nav__mobile--card">
+                       <button class="nav__mobile--btn">
+                            <img src="./assets/icon/buy.svg" alt="" class="icon nav__mobile--icon2">
+                            <span class="nav__mobile--title">Card</span>
+                       </button>
+                       <span class="nav__mobile--title">3</span>
+                    </div>
+                    <!-- item2 -->
+                    <div class="nav__mobile--card">
+                        <button class="nav__mobile--btn">
+                             <img src="./assets/icon/heart.svg" alt="" class="icon nav__mobile--icon3">
+                             <span class="nav__mobile--title">Favorite</span>
+                        </button>
+                        <span class="nav__mobile--title">3</span>
+                     </div>
+                     <!-- item3 -->
+                     <div class="nav__mobile--card">
+                        <button class="nav__mobile--btn">
+                             <span class="nav__mobile--title1">Departments</span>
+                        </button>
+                        <label for="checkbox" class="nav__mobile--check">
+                       <div class="nav__mobile--imgblock">
+                            <img src="./assets/icon/Arrow - Down 2.svg" alt="" class="icon nav__mobile--icon4">
+                            <img src="./assets/icon/arrow-3.svg" alt="" class="icon nav__mobile--icon5">
+                       </div>
+                    </label>
+                     </div>
+                     <p class="nav__mobile--desc">Savings & Featured Shops</p>
+                     <div class="nav__mobile--imgblock1">
+                           <a href="#!" class="nav__mobile--link">Electronics</a>
+                            <img src="./assets/icon/Arrow - Down 2.svg" alt="" class="icon nav__mobile--icon6">
+                        </div>
+                     <input type="checkbox" name="checkbox" id="checkbox" hidden>
+                     <!-- list tv and video -->
+                     <div class="dropdown__inner--item">
+                        <div class="dropdown__inner--img2">
+                            <img src="./assets/icon/game.svg" alt="" class="icon1 dropdown__inner--icon">
+                        </div>
+                        <div class="dropdown__inner--blog">
+                            <h2 class="dropdown__inner--header">TV & Video</h2>
+                            <p class="dropdown__inner--desc">TVs by Size</p>
+                            <p class="dropdown__inner--desc">Smart TVs</p>
+                            <p class="dropdown__inner--desc">Roku TVs</p>
+                            <p class="dropdown__inner--desc">Streaming</p>
+                            <p class="dropdown__inner--desc">TV & Video</p>
+                            <p class="dropdown__inner--desc">DVD & Blu-Ray Players</p>
+                            <p class="dropdown__inner--desc">TV Mounts & Accessories</p>
+                        </div>
+                    </div>
+                    <!-- technology -->
+                    <div class="dropdown__inner--item dropdown__inner--item2-1">
+                        <div class="dropdown__inner--img2-1">
+                            <img src="./assets/icon/star.svg" alt="" class="dropdown__inner--icon1">
+                            <img src="./assets/icon/game.svg" alt="" class=" icon1 dropdown__inner--icon">
+                        </div>
+                       <div class="dropdown__inner--blog">
+                            <h2 class="dropdown__inner--header">Wearable Technology</h2>
+                            <p class="dropdown__inner--desc">Galaxy Watch</p>
+                            <p class="dropdown__inner--desc">Apple Watch</p>
+                            <p class="dropdown__inner--desc">Fitness Trackers</p>
+                            <p class="dropdown__inner--desc">Virtual Reality</p>
+                            <p class="dropdown__inner--desc">Headphones</p>
+                       </div>
+                 </div>
+                 <div class="dropdown__inner--item1">
+                     <p class="dropdown__inner--desc">Clothing, Shoes & Accessories</p>
+                     <p class="dropdown__inner--desc">Home, Furniture & Appliances</p>
+                     <p class="dropdown__inner--desc">Toys & Video Games</p>
+                     <p class="dropdown__inner--desc">Home Improvement</p>
+                     <p class="dropdown__inner--desc">Baby</p>
+                     <p class="dropdown__inner--desc">Household Essentials</p>
+                     <p class="dropdown__inner--desc">Personal Care</p>
+                     <p class="dropdown__inner--desc">Patio & Garden</p>
+                     <p class="dropdown__inner--desc">Sports & Outdoors</p>
+                     <p class="dropdown__inner--desc">Gift Cards</p>
+                     <p class="dropdown__inner--desc">Auto, Tires and Industrial</p>
+                     <p class="dropdown__inner--desc">Movies, Music & Books</p>
+                 </div>
+               </div>
+               <!-- Grocery -->
+               <div class="nav__mobile--main2">
                 <div class="nav__mobile--card">
                     <button class="nav__mobile--btn">
-                         <img src="./assets/icon/heart.svg" alt="" class="icon nav__mobile--icon3">
-                         <span class="nav__mobile--title">Favorite</span>
+                         <span class="nav__mobile--title1">Grocery</span>
                     </button>
-                    <span class="nav__mobile--title">3</span>
-                 </div>
-                 <!-- item3 -->
-                 <div class="nav__mobile--card">
-                    <button class="nav__mobile--btn">
-                         <span class="nav__mobile--title1">Departments</span>
-                    </button>
-                    <label for="checkbox" class="nav__mobile--check">
+                    <label for="checkbox1" class="nav__mobile--check">
                    <div class="nav__mobile--imgblock">
                         <img src="./assets/icon/Arrow - Down 2.svg" alt="" class="icon nav__mobile--icon4">
                         <img src="./assets/icon/arrow-3.svg" alt="" class="icon nav__mobile--icon5">
                    </div>
                 </label>
                  </div>
-                 <p class="nav__mobile--desc">Savings & Featured Shops</p>
-                 <div class="nav__mobile--imgblock1">
-                        <a href="#!" class="nav__mobile--link">Electronics</a>
-                        <img src="./assets/icon/Arrow - Down 2.svg" alt="" class="icon nav__mobile--icon6">
-                    </div>
-                 <input type="checkbox" name="checkbox" id="checkbox" hidden>
-                 <!-- list tv and video -->
-                 <div class="dropdown__inner--item">
+                 <input type="checkbox" name="checkbox1" id="checkbox1" hidden>
+                 <!-- item1 -->
+                 <div class="dropdown__inner--item2">
                     <div class="dropdown__inner--img2">
-                        <img src="./assets/icon/game.svg" alt="" class="dropdown__inner--icon">
+                        <img src="./assets/icon/icon1.svg" alt="" class=" icon1 dropdown__inner--icon">
                     </div>
                     <div class="dropdown__inner--blog">
-                        <h2 class="dropdown__inner--header">TV & Video</h2>
-                        <p class="dropdown__inner--desc">TVs by Size</p>
-                        <p class="dropdown__inner--desc">Smart TVs</p>
-                        <p class="dropdown__inner--desc">Roku TVs</p>
-                        <p class="dropdown__inner--desc">Streaming</p>
-                        <p class="dropdown__inner--desc">TV & Video</p>
-                        <p class="dropdown__inner--desc">DVD & Blu-Ray Players</p>
-                        <p class="dropdown__inner--desc">TV Mounts & Accessories</p>
+                        <h2 class="dropdown__inner--header">Grocery</h2>
+                        <p class="dropdown__inner--desc">Shop All</p>
+                        <p class="dropdown__inner--desc">Grilling Foods</p>
+                        <p class="dropdown__inner--desc">Spring Flavors</p>                                      
                     </div>
                 </div>
-                <!-- technology -->
-                <div class="dropdown__inner--item dropdown__inner--item2-1">
+                <div class="dropdown__inner--item2 dropdown__inner--item2-1">
                     <div class="dropdown__inner--img2-1">
-                        <img src="./assets/icon/star.svg" alt="" class="dropdown__inner--icon1">
-                        <img src="./assets/icon/game.svg" alt="" class="dropdown__inner--icon">
+                        <img src="./assets/icon/star2.svg" alt="" class="dropdown__inner--icon1">
+                        <img src="./assets/icon/apple.svg" alt="" class=" icon1 dropdown__inner--icon">
                     </div>
                    <div class="dropdown__inner--blog">
-                        <h2 class="dropdown__inner--header">Wearable Technology</h2>
-                        <p class="dropdown__inner--desc">Galaxy Watch</p>
-                        <p class="dropdown__inner--desc">Apple Watch</p>
-                        <p class="dropdown__inner--desc">Fitness Trackers</p>
-                        <p class="dropdown__inner--desc">Virtual Reality</p>
-                        <p class="dropdown__inner--desc">Headphones</p>
+                        <h2 class="dropdown__inner--header">Fresh Produce</h2>
+                        <p class="dropdown__inner--desc">Shop All</p>
+                        <p class="dropdown__inner--desc">Celebrate Salad Month</p>
+                        <p class="dropdown__inner--desc">Healthy Living</p>
+                        <p class="dropdown__inner--desc">Fresh Flowers</p>
+                        <p class="dropdown__inner--desc">Chilled Dressing</p>
+                        <p class="dropdown__inner--desc">Fresh Fruit</p>
+                        <p class="dropdown__inner--desc">Salad Kits & Bowls</p>
+                        <p class="dropdown__inner--desc">Organic Produce</p>
+                        <p class="dropdown__inner--desc">Fresh Vegetables</p>
                    </div>
              </div>
-             <div class="dropdown__inner--item1">
-                 <p class="dropdown__inner--desc">Clothing, Shoes & Accessories</p>
-                 <p class="dropdown__inner--desc">Home, Furniture & Appliances</p>
-                 <p class="dropdown__inner--desc">Toys & Video Games</p>
-                 <p class="dropdown__inner--desc">Home Improvement</p>
-                 <p class="dropdown__inner--desc">Baby</p>
-                 <p class="dropdown__inner--desc">Household Essentials</p>
-                 <p class="dropdown__inner--desc">Personal Care</p>
-                 <p class="dropdown__inner--desc">Patio & Garden</p>
-                 <p class="dropdown__inner--desc">Sports & Outdoors</p>
-                 <p class="dropdown__inner--desc">Gift Cards</p>
-                 <p class="dropdown__inner--desc">Auto, Tires and Industrial</p>
-                 <p class="dropdown__inner--desc">Movies, Music & Books</p>
+               </div>
+               <!-- beauty -->
+               <div class="nav__mobile--main3">
+                <div class="nav__mobile--card">
+                    <button class="nav__mobile--btn">
+                         <span class="nav__mobile--title1">Beauty</span>
+                    </button>
+                    <label for="checkbox2" class="nav__mobile--check">
+                   <div class="nav__mobile--imgblock">
+                        <img src="./assets/icon/Arrow - Down 2.svg" alt="" class="icon nav__mobile--icon4">
+                        <img src="./assets/icon/arrow-3.svg" alt="" class="icon nav__mobile--icon5">
+                   </div>
+                </label>
+                 </div>
+                 <input type="checkbox" name="checkbox2" id="checkbox2" hidden>
+                 <div class="dropdown__inner--item3">
+                    <div class="dropdown__inner--img2">
+                        <img src="./assets/icon/icon1.svg" alt="" class=" icon1 dropdown__inner--icon">
+                    </div>
+                    <div class="dropdown__inner--blog">
+                        <h2 class="dropdown__inner--header">Featured Shops</h2>
+                        <p class="dropdown__inner--desc">Pickup Today in Beauty</p>
+                        <p class="dropdown__inner--desc">BeautySpaceNK</p>
+                        <p class="dropdown__inner--desc">Equate Beauty</p>   
+                        <p class="dropdown__inner--desc">Beauty Deals</p>
+                        <p class="dropdown__inner--desc">Walmart Exclusives</p>
+                        <p class="dropdown__inner--desc">Luxury Beauty Deals</p>
+                        <p class="dropdown__inner--desc">New Arrivals</p>                                   
+                    </div>
+                </div>
+                <div class="dropdown__inner--item3 dropdown__inner--item2-1">
+                    <div class="dropdown__inner--img2-1">
+                        <img src="./assets/icon/icon12.svg" alt="" class="dropdown__inner--icon1">
+                        <img src="./assets/icon/icon13.svg" alt="" class="icon1 dropdown__inner--icon">
+                    </div>
+                   <div class="dropdown__inner--blog">
+                        <h2 class="dropdown__inner--header">Trending in Beauty</h2>
+                        <p class="dropdown__inner--desc">Trending Beauty Products</p>
+                        <p class="dropdown__inner--desc">Celebrate Earth Day</p>
+                        <p class="dropdown__inner--desc">Prom-ready Beauty</p>
+                        <p class="dropdown__inner--desc">Summer Beauty</p>
+                        <p class="dropdown__inner--desc">Travel Size & Minis</p>
+                   </div>
              </div>
-           </div>
-           <!-- Grocery -->
-           <div class="nav__mobile--main2">
-            <div class="nav__mobile--card">
-                <button class="nav__mobile--btn">
-                     <span class="nav__mobile--title1">Grocery</span>
-                </button>
-                <label for="checkbox1" class="nav__mobile--check">
-               <div class="nav__mobile--imgblock">
-                    <img src="./assets/icon/Arrow - Down 2.svg" alt="" class="icon nav__mobile--icon4">
-                    <img src="./assets/icon/arrow-3.svg" alt="" class="icon nav__mobile--icon5">
                </div>
-            </label>
-             </div>
-             <input type="checkbox" name="checkbox1" id="checkbox1" hidden>
-             <!-- item1 -->
-             <div class="dropdown__inner--item2">
-                <div class="dropdown__inner--img2">
-                    <img src="./assets/icon/icon1.svg" alt="" class="dropdown__inner--icon">
-                </div>
-                <div class="dropdown__inner--blog">
-                    <h2 class="dropdown__inner--header">Grocery</h2>
-                    <p class="dropdown__inner--desc">Shop All</p>
-                    <p class="dropdown__inner--desc">Grilling Foods</p>
-                    <p class="dropdown__inner--desc">Spring Flavors</p>                                      
-                </div>
-            </div>
-            <div class="dropdown__inner--item2 dropdown__inner--item2-1">
-                <div class="dropdown__inner--img2-1">
-                    <img src="./assets/icon/star2.svg" alt="" class="dropdown__inner--icon1">
-                    <img src="./assets/icon/apple.svg" alt="" class="dropdown__inner--icon">
-                </div>
-               <div class="dropdown__inner--blog">
-                    <h2 class="dropdown__inner--header">Fresh Produce</h2>
-                    <p class="dropdown__inner--desc">Shop All</p>
-                    <p class="dropdown__inner--desc">Celebrate Salad Month</p>
-                    <p class="dropdown__inner--desc">Healthy Living</p>
-                    <p class="dropdown__inner--desc">Fresh Flowers</p>
-                    <p class="dropdown__inner--desc">Chilled Dressing</p>
-                    <p class="dropdown__inner--desc">Fresh Fruit</p>
-                    <p class="dropdown__inner--desc">Salad Kits & Bowls</p>
-                    <p class="dropdown__inner--desc">Organic Produce</p>
-                    <p class="dropdown__inner--desc">Fresh Vegetables</p>
-               </div>
-         </div>
-           </div>
-           <!-- beauty -->
-           <div class="nav__mobile--main3">
-            <div class="nav__mobile--card">
-                <button class="nav__mobile--btn">
-                     <span class="nav__mobile--title1">Beauty</span>
-                </button>
-                <label for="checkbox2" class="nav__mobile--check">
-               <div class="nav__mobile--imgblock">
-                    <img src="./assets/icon/Arrow - Down 2.svg" alt="" class="icon nav__mobile--icon4">
-                    <img src="./assets/icon/arrow-3.svg" alt="" class="icon nav__mobile--icon5">
-               </div>
-            </label>
-             </div>
-             <input type="checkbox" name="checkbox2" id="checkbox2" hidden>
-             <div class="dropdown__inner--item3">
-                <div class="dropdown__inner--img2">
-                    <img src="./assets/icon/icon1.svg" alt="" class="dropdown__inner--icon">
-                </div>
-                <div class="dropdown__inner--blog">
-                    <h2 class="dropdown__inner--header">Featured Shops</h2>
-                    <p class="dropdown__inner--desc">Pickup Today in Beauty</p>
-                    <p class="dropdown__inner--desc">BeautySpaceNK</p>
-                    <p class="dropdown__inner--desc">Equate Beauty</p>   
-                    <p class="dropdown__inner--desc">Beauty Deals</p>
-                    <p class="dropdown__inner--desc">Walmart Exclusives</p>
-                    <p class="dropdown__inner--desc">Luxury Beauty Deals</p>
-                    <p class="dropdown__inner--desc">New Arrivals</p>                                   
-                </div>
-            </div>
-            <div class="dropdown__inner--item3 dropdown__inner--item2-1">
-                <div class="dropdown__inner--img2-1">
-                    <img src="./assets/icon/icon12.svg" alt="" class="dropdown__inner--icon1">
-                    <img src="./assets/icon/icon13.svg" alt="" class="dropdown__inner--icon">
-                </div>
-               <div class="dropdown__inner--blog">
-                    <h2 class="dropdown__inner--header">Trending in Beauty</h2>
-                    <p class="dropdown__inner--desc">Trending Beauty Products</p>
-                    <p class="dropdown__inner--desc">Celebrate Earth Day</p>
-                    <p class="dropdown__inner--desc">Prom-ready Beauty</p>
-                    <p class="dropdown__inner--desc">Summer Beauty</p>
-                    <p class="dropdown__inner--desc">Travel Size & Minis</p>
-               </div>
-         </div>
-           </div>
         </div>
+        <!-- logo -->
+        <a href="./index.html" class="logo">
+            <img src="./assets/icon/Icon.svg" alt="grocerymart" class="img__logo" />
+            <h1 class="logo__header">grocerymart</h1>
+        </a>
         <!-- nav -->
         <nav class="nav">
             <ul class="nav__list">

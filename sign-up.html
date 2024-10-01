@@ -39,18 +39,87 @@
         <script src="./assets/js/scripts.js"></script>
     </head>
     <body>
-        <!-- header -->
-        <header id="header"></header>
-        <script>
-            load("#header", "./templates/header.html")
-        </script>
         <main>
-
+            <div class="main">
+                <div class="main__body">
+                    <!-- left -->
+                    <div class="main__left">
+                        <div class="main__img">
+                            <img src="./assets/icon/sign-up.svg" alt="" />
+                            <p class="main__desc">
+                                The best of luxury brand values, high quality
+                                products, and innovative services
+                            </p>
+                        </div>
+                    </div>
+                    <!-- right -->
+                    <div class="main__right">
+                       <div class="main__right--item">
+                            <a href="!#" class="logo">
+                                <img
+                                    src="./assets/icon/Icon.svg"
+                                    alt="grocerymart"
+                                    class="img__logo"
+                                />
+                                <h1 class="logo__header">grocerymart</h1>
+                            </a>
+                            <h2 class="main__header">Sign Up</h2>
+                            <p class="main__title">Let’s create your account and Shop like a pro and save money.</p>
+                            <form action="">
+                                <div class="main__input1">
+                                    <input
+                                        type="email"
+                                        name=""
+                                        id=""
+                                        placeholder="Email"
+                                        class="input"
+                                    />
+                                    <img src="./assets/icon/mail.svg" alt="" class="main__icon1" />
+                                </div>
+                                <div class="main__input1">
+                                    <input
+                                        type="password"
+                                        name=""
+                                        id=""
+                                        placeholder="Password"
+                                        class="input"
+                                    />
+                                    <img src="./assets/icon/pass.svg" alt="" class="main__icon1" />
+                                </div>
+                                <div class="main__input1">
+                                    <input
+                                        type="password"
+                                        name=""
+                                        id=""
+                                        placeholder="Confirm Password"
+                                        class="input"
+                                    />
+                                    <img src="./assets/icon/pass.svg" alt="" class="main__icon1" />
+                                </div>
+                                <div class="main__check">
+                                    <label for="checkbox">
+                                        <input type="checkbox" name="checkbox" id="checkbox" hidden/>
+                                        Set as default card
+                                    </label>
+                                    <a href="#!" class="main__link">Recovery Password</a>
+                                </div>
+                                <button class="main__btn" type="button"><a href="./index.html" class="sign-up">Sign Up</a></button>
+                                <a href="./index.html">
+                                    <button  class="main__google">
+                                        <img src="./assets/icon/google.svg" alt="">
+                                        <p class="main__gmail">Sign in with Gmail</p>
+                                    </button>
+                                </a>
+                            </form>
+                               <!-- signin -->
+                    <div class="main__sign-in">
+                        <p class="desc">You have an account yet?</p>
+                        <a href="./Sign-in.html" class="link">Sign In</a>
+                    </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
         </main>
-        <!-- footer -->
-        <footer id="footer"></footer>
-        <script>
-            load("#footer", "./templates/footer.html")
-        </script>
     </body>
 </html>

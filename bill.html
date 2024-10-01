@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grocerymart</title>
+
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./assets/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- font -->
+        <link rel="stylesheet" href="./assets/font/stylesheet.css" />
+        <!-- css -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <!-- js -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <!-- header -->
+        <header id="header" class="head"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+        <div class="container">
+            <!-- control -->
+            <div class="control">
+                <div class="control__body">
+                    <div class="control__item">
+                        <p class="control__desc">Departments</p>
+                        <img
+                            src="./assets/icon/arrow4.svg"
+                            alt=""
+                            class="control__icon"
+                        />
+                    </div>
+                    <div class="control__item">
+                        <p class="control__desc">Coffee</p>
+                        <img
+                            src="./assets/icon/arrow4.svg"
+                            alt=""
+                            class="control__icon"
+                        />
+                    </div>
+                    <div class="control__item">
+                        <p class="control__desc control__desc1">Coffee Beans</p>
+                        <img
+                            src="./assets/icon/arrow4.svg"
+                            alt=""
+                            class="control__icon"
+                        />
+                    </div>
+                    <p class="control__desc control__desc2">LavAzza</p>
+                </div>
+            </div>
+            <!-- bill -->
+            <div class="bill">
+                <div class="bill__body">
+                    <div class="bill__left">
+                        <img src="./assets/img/bill.png" alt="" class="bill__img" />
+                    </div>
+                    <div class="bill__right">
+                        <h2 class="bill__header">Coffee Beans - Espresso Arabica and Robusta Beans</h2>
+                        <div class="bill__right--body">
+                            <div class="bill__item--left">
+                                <div class="bill__item--star">
+                                    <img src="./assets/icon/star1.svg" alt="" />
+                                    <span class="bill__star">(3.5) 1100 reviews</span>
+                                </div>
+                                <div class="bill__list">
+                                    <p class="bill__title">Size/Weight</p>
+                                    <div class="bill__size">
+                                        <div class="bill__size-left">
+                                            <span class="bill__weight">500g</span>
+                                            <img
+                                                src="./assets/icon/arrow1.svg"
+                                                alt=""
+                                                class=" icon filter__arrow"
+                                            />
+                                        </div>
+                                        <div class="bill__size-left">
+                                            <div class="bill__barr"></div>
+                                            <span class="filter__weight gram"
+                                                >Gram</span
+                                            >
+                                            <img
+                                                src="./assets/icon/arrow1.svg"
+                                                alt=""
+                                                class="icon filter__arrow"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="bill__align">
+                                        <button class="bill__btn">Small</button>
+                                        <button class="bill__btn">Medium</button>
+                                        <button class="bill__btn">Medium</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bill__item--right">
+                                <div class="bill__item--compare">
+                                    <img src="./assets/icon/document.svg" alt="" class="icon bill__icon" />
+                                    <span class="bill__compare">Compare</span>
+                                </div>
+                                <div class="bill__item--compare">
+                                    <img src="./assets/icon/buy.svg" alt="" class="icon bill__icon" />
+                                    <div class="bill__block">
+                                        <span class="bill__compare">Delivery</span>
+                                        <span class="bill__day">From $6 for 1-3 days</span>
+                                    </div>
+                                </div>
+                                <div class="bill__item--compare">
+                                    <img src="./assets/icon/bag.svg" alt="" class="icon bill__icon" />
+                                    <div class="bill__block">
+                                        <span class="bill__compare">Pickup</span>
+                                        <span class="bill__day">Out of 2 store, today</span>
+                                    </div>
+                                </div>
+                                <div class="bill__btn1">
+                                    <div class="bill__btn--body">
+                                        <div class="bill__btn--top">
+                                            <span class="bill__price1">$500.00</span>
+                                            <img src="./assets/img/discount.png" alt="" class="bill__btn--img">
+                                        </div>
+                                        <span class="bill__price2">$540.00</span>
+                                        <div class="bill__add">
+                                            <button class="bill__add--card">
+                                                <a href="#!" class="bill__add--link">Add to cart</a>
+                                            </button>
+                                            <div class="bill__border">
+                                               <a href="#!"> <img src="./assets/icon/heart.svg" alt="" class="icon"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- review -->
+            <div class="review">
+                <div class="review__body">
+                    <!-- top -->
+                    <div class="review__top">
+                        <p class="review__title">Description</p>
+                        <p class="review__title">Features</p>
+                        <p class="review__title">Review (1100)</p>
+                        <p class="review__title">Similar</p>
+                    </div>
+                    <!-- bot -->
+                    <div class="review__bot">
+                        <h3 class="review__header">What our customers are saying</h3>
+                        <div class="review__bot--list">
+                            <!-- item1 -->
+                            <div class="review__bot--item">
+                                <div class="review__item--top">
+                                    <img src="./assets/img/ava1.png" alt="" class="review__item--ava">
+                                    <div class="review__item--info">
+                                        <p class="review__item--name">Jakir Hussen</p>
+                                        <p class="review__item--desc">Great product, I love this Coffee Beans</p>
+                                    </div>
+                                </div>
+                                <div class="review__item--bot">
+                                    <div class="review__item-star">
+                                        <img src="./assets/icon/star1.svg" alt="">
+                                        <img src="./assets/icon/star1.svg" alt="">
+                                        <img src="./assets/icon/star1.svg" alt="">
+                                        <img src="./assets/icon/star3.svg" alt="">
+                                        <img src="./assets/icon/star4.svg" alt="">
+                                    </div>
+                                    <span class="review__item--evaluate">(3.5) Review</span>
+                                </div>
+                            </div>
+                              <!-- item2 -->
+                              <div class="review__bot--item">
+                                <div class="review__item--top">
+                                    <img src="./assets/img/ava2.png" alt="" class="review__item--ava">
+                                    <div class="review__item--info">
+                                        <p class="review__item--name">Jubed Ahmed</p>
+                                        <p class="review__item--desc">Awesome Coffee, I love this Coffee Beans </p>
+                                    </div>
+                                </div>
+                                <div class="review__item--bot">
+                                    <div class="review__item-star">
+                                        <img src="./assets/icon/star1.svg" alt="">
+                                        <img src="./assets/icon/star3.svg" alt="">
+                                        <img src="./assets/icon/star3.svg" alt="">
+                                        <img src="./assets/icon/star3.svg" alt="">
+                                        <img src="./assets/icon/star4.svg" alt="">
+                                    </div>
+                                    <span class="review__item--evaluate">(2.5) Review</span>
+                                </div>
+                            </div>
+                              <!-- item3 -->
+                              <div class="review__bot--item">
+                                <div class="review__item--top">
+                                    <img src="./assets/img/ava3.png" alt="" class="review__item--ava">
+                                    <div class="review__item--info">
+                                        <p class="review__item--name">Delwar Hussain</p>
+                                        <p class="review__item--desc">Great product, I like this Coffee Beans</p>
+                                    </div>
+                                </div>
+                                <div class="review__item--bot">
+                                    <div class="review__item-star">
+                                        <img src="./assets/icon/star1.svg" alt="">
+                                        <img src="./assets/icon/star1.svg" alt="">
+                                        <img src="./assets/icon/star1.svg" alt="">
+                                        <img src="./assets/icon/star3.svg" alt="">
+                                        <img src="./assets/icon/star4.svg" alt="">
+                                    </div>
+                                    <span class="review__item--evaluate">(3.5) Review</span>
+                                </div>
+                            </div>
+                              <!-- item4 -->
+                              <div class="review__bot--item">
+                                <div class="review__item--top">
+                                    <img src="./assets/img/ava4.png" alt="" class="review__item--ava">
+                                    <div class="review__item--info">
+                                        <p class="review__item--name">Peter Smile</p>
+                                        <p class="review__item--desc">Great product, I love this Coffee Beans</p>
+                                    </div>
+                                </div>
+                                <div class="review__item--bot">
+                                    <div class="review__item-star">
+                                        <img src="./assets/icon/star1.svg" alt="">
+                                        <img src="./assets/icon/star1.svg" alt="">
+                                        <img src="./assets/icon/star1.svg" alt="">
+                                        <img src="./assets/icon/star1.svg" alt="">
+                                        <img src="./assets/icon/star1.svg" alt="">
+                                    </div>
+                                    <span class="review__item--evaluate">(5.0) Review</span>
+                                </div>
+                            </div>
+                              <!-- item5 -->
+                              <div class="review__bot--item">
+                                <div class="review__item--top">
+                                    <img src="./assets/img/ava5.png" alt="" class="review__item--ava">
+                                    <div class="review__item--info">
+                                        <p class="review__item--name">Cristiano Ronaldo</p>
+                                        <p class="review__item--desc">Great product, I love this Coffee Beans</p>
+                                    </div>
+                                </div>
+                                <div class="review__item--bot">
+                                    <div class="review__item-star">
+                                        <img src="./assets/icon/star1.svg" alt="">
+                                        <img src="./assets/icon/star1.svg" alt="">
+                                        <img src="./assets/icon/star1.svg" alt="">
+                                        <img src="./assets/icon/star3.svg" alt="">
+                                        <img src="./assets/icon/star4.svg" alt="">
+                                    </div>
+                                    <span class="review__item--evaluate">(3.5) Review</span>
+                                </div>
+                            </div>
+                              <!-- item6 -->
+                              <div class="review__bot--item">
+                                <div class="review__item--top">
+                                    <img src="./assets/img/ava6.png" alt="" class="review__item--ava">
+                                    <div class="review__item--info">
+                                        <p class="review__item--name">Just Bellingham</p>
+                                        <p class="review__item--desc">Great product, I love this Coffee Beans</p>
+                                    </div>
+                                </div>
+                                <div class="review__item--bot">
+                                    <div class="review__item-star">
+                                        <img src="./assets/icon/star1.svg" alt="">
+                                        <img src="./assets/icon/star1.svg" alt="">
+                                        <img src="./assets/icon/star1.svg" alt="">
+                                        <img src="./assets/icon/star3.svg" alt="">
+                                        <img src="./assets/icon/star3.svg" alt="">
+                                    </div>
+                                    <span class="review__item--evaluate">(4.5) Review</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+            <footer id="footer"></footer>
+            <script>
+                load("#footer", "./templates/footer.html");
+            </script>
+        </div>
+    </body>
+</html>

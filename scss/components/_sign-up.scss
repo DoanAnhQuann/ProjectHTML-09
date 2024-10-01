@@ -1,0 +1,231 @@
+@use "../abstracts";
+.main {
+    &__body {
+        display: flex;
+    }
+    &__left {
+        background: var(--Secondary-Color-Secondary-6);
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include abstracts.breakpoint(sm) {
+            display: none;
+        }
+    }
+    &__img {
+        margin-right: 70px;
+        width: 422px;
+        height: 362px;
+    }
+    &__desc {
+        margin-right: -30px;
+        margin-top: 49px;
+        color: var(--Secondary-Color-Secondary-1);
+        text-align: center;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.44;
+    }
+    &__right {
+        padding: 50px 0 52px;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+    }
+    &__right--item {
+        width: 460px;
+        @include abstracts.breakpoint(sm) {
+            width: 315px;
+        }
+    }
+    .logo {
+        justify-content: center;
+    }
+    &__header {
+        margin-top: 50px;
+        text-align: center;
+        color: var(--Secondary-Color-Secondary-1, #1a162e);
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.46;
+    }
+    &__title {
+        margin-left: 16px;
+        width: 430px;
+        margin-top: 10px;
+        color: var(--Secondary-Color-Secondary-2, #9e9da8);
+        text-align: center;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.46;
+        @include abstracts.breakpoint(sm) {
+            margin-left: 0;
+            width: 315px;
+        }
+    }
+    form {
+        margin-top: 60px;
+    }
+    input {
+        background-color: #f6f6f6;
+        outline: none;
+        border: none;
+    }
+    &__input1 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 460px;
+        padding: 12px;
+        border-radius: 10px;
+        border: 1px solid var(--Secondary-Color-Secondary-3, #d2d1d6);
+        @include abstracts.breakpoint(sm) {
+           width: 315px;
+        }
+    }
+    .input {
+        width: 400px;
+    }
+    &__icon1 {
+        position: absolute;
+        right: 12px;
+    }
+    &__input1:not(:first-child) {
+        margin-top: 20px;
+    }
+    ::placeholder {
+        color: var(--Secondary-Color-Secondary-3, #d2d1d6);
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.44;
+    }
+    &__check {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    label {
+        margin-left: 34px;
+        position: relative;
+        color: var(--Secondary-Color-Secondary-2, #9e9da8);
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.46;
+    }
+    label::after {
+        top: 0;
+        left: -34px;
+        position: absolute;
+        display: block;
+        content: "";
+        width: 18.5px;
+        height: 18.5px;
+        border: 1px solid #9e9da8;
+        border-radius: 5px;
+    }
+    label::before {
+        top: 4px;
+        left: -31.4px;
+        position: absolute;
+        display: none;
+        content: "";
+        width: 12px;
+        height: 8px;
+        border-left: 3px solid #fff;
+        border-bottom: 3px solid #fff;
+        rotate: -45deg;
+    }
+    &__right:has(:checked) label::before {
+        display: block;
+        z-index: 1;
+    }
+    &__right:has(:checked) label::after {
+        background-color: #0071dc;
+    }
+    &__link {
+        color: var(--Blue-Blue, #0071dc);
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.46;
+    }
+    &__btn {
+        margin-top: 62px;
+        width: 460px;
+        padding: 12px;
+        border-radius: 10px;
+        background: var(--Yellow-Yellow, #ffb700);
+        @include abstracts.breakpoint(sm) {
+            width: 315px;
+        }
+    }
+    &__btn:hover{
+        opacity: 0.8;
+    }
+    .sign-up {
+        padding: 12px 184px;
+        color: var(--Secondary-Color-Secondary-1);
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.44;
+        @include abstracts.breakpoint(sm) {
+            padding: 12px 112px;
+        }
+    }
+    &__google {
+        margin-top: 30px;
+        width: 460px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+        border-radius: 10px;
+        padding: 12px;
+        border: 1px solid var(--Secondary-Color-Secondary-3, #d2d1d6);
+        @include abstracts.breakpoint(sm) {
+            width: 315px;
+        }
+    }
+    &__gmail {
+        color: var(--Secondary-Color-Secondary-1);
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.44;
+    }
+    &__gmail:hover{
+        opacity: 0.8;
+    }
+    &__sign-in {
+        margin-top: 108px;
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        justify-content: center;
+        @include abstracts.breakpoint(sm) {
+            margin-top: 56px;
+        }
+        .desc {
+            color: var(--Secondary-Color-Secondary-2, #9e9da8);
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.44;
+        }
+        .link {
+            color: var(--Blue-Blue, #0071dc);
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.44
+        }
+    }
+}

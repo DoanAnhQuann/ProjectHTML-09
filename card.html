@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grocerymart</title>
+
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./assets/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- font -->
+        <link rel="stylesheet" href="./assets/font/stylesheet.css" />
+        <!-- css -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <!-- js -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <!-- header -->
+        <header id="header" class="head"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+        <div class="container">
+            <!-- control card -->
+            <div class="card__control">
+               <div class="card__body">
+                    <div class="card__home">
+                        <p class="card__desc">Home</p>
+                        <img src="./assets/icon/arrow4.svg" alt="">
+                    </div>
+                    <div class="card__checkout">
+                        <p class="card__desc">checkout</p>
+                    </div>
+               </div>
+            </div>
+            <!-- product card -->
+            <div class="product__card">
+                <div class="product__body">
+                    <!-- item1 -->
+                    <div class="product__item">
+                        <img src="" alt="">
+                        <div class="product__block">
+                            <div class="product__row">
+                                <h3 class="product__header"></h3>
+                                <p class="produce__dola"></p>
+                            </div>
+                            <p class="product__desc"></p>
+                            <div class="product__btn">
+                                <!-- left -->
+                               <div class="product__btn--left">
+                                    <button class="product__laz">
+                                        <a href="#!" class="product__link">
+                                            <p class="product__title"></p>
+                                            <img src="" alt="">
+                                        </a>
+                                    </button>
+                                    <button class="product__qualiti">
+                                        <img src="" alt="">
+                                        <span class="product__span"></span>
+                                        <img src="" alt="">
+                                    </button>
+                               </div>
+                               <!-- right -->
+                               <div class="product__btn--right">
+                                    <div class="product__save">
+                                        <img src="" alt="">
+                                        <span class="product__span2"></span>
+                                    </div>
+                                    <div class="product__delete">
+                                        <img src="" alt="">
+                                        <span class="product__span2"></span>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- footer -->
+            <footer id="footer"></footer>
+            <script>
+                load("#footer", "./templates/footer.html");
+            </script>
+        </div>
+    </body>
+</html>

@@ -25,7 +25,7 @@
         @include abstracts.breakpoint(lg) {
             display: block;
         }
-    }
+    }  
 }
 .logo {
     display: flex;
@@ -74,15 +74,29 @@
 .nav__mobile {
     display: none;
 }
+@include abstracts.breakpoint(lg){
+.more:has(:checked) ~ .overlay__mobile{
+      display: block;
+    }
+.more:has(:checked) ~ .nav__mobile{
+    transform: translateX(0);
+    box-shadow: 0px 40px 90px 20px var(--shadow-navmobile);
+}
+}
 @include abstracts.breakpoint(lg) {
     .nav__mobile {
-        display:none;
+        display:block;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        transform: translateX(-100%);
+        transition: 0.9s ease;
         position: fixed;
         z-index: 9;
-        inset: 0 50% 0 0;
-        background-color: #fff;
+        inset: 0 30% 0 0;
+        background-color:var(--bg-navmobile);
         padding: 20px;
         overflow-y: auto;
+       
         .icon {
             filter: var(--icon2-color);
         }
@@ -98,14 +112,14 @@
             gap: 16px;
         }
         &--title {
-            color: var(--Secondary-Color-Secondary-1, #1a162e);
+            color: var(--dropinner-text);
             font-size: 1.5rem;
             font-style: normal;
             font-weight: 500;
             line-height: 1.46;
         }
         &--title1 {
-            color: var(--Secondary-Color-Secondary-1, #1a162e);
+            color: var(--dropinner-text);
             font-size: 1.6rem;
             font-style: normal;
             font-weight: 600;
@@ -114,7 +128,7 @@
         &--desc {
             display: none;
             margin-top: 20px;
-            color: var(--Secondary-Color-Secondary-1, #1a162e);
+            color: var(--dropinner-text);
             font-size: 1.4rem;
             font-style: normal;
             font-weight: 400;
@@ -145,7 +159,7 @@
             margin-top: 20px;
         }
         &--link {
-            color: var(--Secondary-Color-Secondary-1, #1a162e);
+            color:#0071DC;
             font-size: 1;
             font-style: normal;
             font-weight: 500;
@@ -157,7 +171,9 @@
         .dropdown__inner--item2-1 {
             margin-top: 30px;
         }
-
+        .icon1{
+            filter: var(--color-navmobile);
+        }
     }
     .nav__mobile--main:has(:not(:checked)) .nav__mobile--icon4 {
         display: none;
@@ -217,10 +233,6 @@
         gap: 14px;
     }
 }
-.more:has(:checked) + .nav__mobile{
-  display: block;
-
-}
 .body{
     position: fixed;
     inset: 0 50% 0 0;
@@ -228,7 +240,7 @@
 .overlay__mobile {
     display: none;
     @include abstracts.breakpoint(lg) {
-        display: block;
+        display: none;
         position: fixed;
         z-index: 4;
         inset: 0;
@@ -249,7 +261,7 @@
         height: 50px;
         padding: 13px 20px;
         border-radius: 8px;
-        box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+        box-shadow: 0px 20px 60px 10px var(--shadow-product);
         cursor: pointer;
     }
     &__icon {

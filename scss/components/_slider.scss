@@ -1,0 +1,69 @@
+@use "../abstracts";
+.slider {
+    margin-top: 40px;
+    .slider__inner {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        &--item {
+            position: relative;
+            width: 100%;
+            flex-shrink: 0;
+            padding-top: 34%;
+            @include abstracts.breakpoint(md){
+                padding-top: 50%;
+            }
+        }
+        &--img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__block {
+        width: 12%;
+        position: absolute;
+        bottom:15%;
+        left: 5.2%;
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+    &__scroll-bar {
+        position: relative;
+        width: 100%;
+        height: 4px;
+        flex-shrink: 0;
+        background: #fff;
+    }
+    &__scroll-bar::after,
+    &__scroll-bar::before {
+        position: absolute;
+        content: "";
+        width: 14px;
+        height: 14px;
+        border: 4px solid #fff;
+        border-radius: 50%;
+    }
+    &__scroll-bar::after {
+        left: -13px;
+        top: -5px;
+    }
+    &__scroll-bar::before {
+        right: -13px;
+        top: -4px;
+    }
+    &__number {
+        color: #fff;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.44;
+    }
+    @include abstracts.breakpoint(md){
+        font-size: 1.4rem;
+    }
+}

@@ -1,20 +1,40 @@
 @use "../abstracts";
 html.dark {
+    --bg--body:#292E39;
     --Secondary-Color-Secondary-1: #ffffff;
     --icon-color: brightness(0) saturate(100%) invert(98%) sepia(0%)
         saturate(2417%) hue-rotate(259deg) brightness(116%) contrast(100%);
-    --bg-color-header: #171C28;
-    --top-action-color: #292E39;
-    --top-action-separate:#EDEDF6;
+    --bg-color-header: #171c28;
+    --top-action-color: #292e39;
+    --top-action-separate: #ededf6;
     --top-action-shadow: rgba(0, 0, 0, 0.2);
-    --bg-drop-inner:#292E39;
-    --box-shadow-inner:rgba(23, 28, 40, 0.40);
-    --bg-color-img-2-1:#292E39;
-    --dropinner-text:#B9BABE;
-    .triagle{
+    --bg-drop-inner: #292e39;
+    --box-shadow-inner: rgba(23, 28, 40, 0.4);
+    --bg-color-img-2-1: #292e39;
+    --dropinner-text: #b9babe;
+    --icon2-color: brightness(0) saturate(100%) invert(79%) sepia(6%)
+        saturate(114%) hue-rotate(191deg) brightness(92%) contrast(97%);
+    --bg-navmobile: #292e39;
+    --shadow-navmobile: rgba(23, 28, 40, 0.4);
+    --color-navmobile: brightness(0) saturate(100%) invert(100%) sepia(0%)
+        saturate(7493%) hue-rotate(139deg) brightness(100%) contrast(103%);
+    --filter-color: #fff;
+    --cato-item-color: #171C28;
+    --cate-item:#292E39;
+    --color-price:#fff;
+    --product-list:#171C28;
+    --shadow-product:rgba(0, 0, 0, 0.20);
+    --bg-heart:#292E39;
+    --filter-bg: #292E39;
+    --filter-shadow: rgba(0, 0, 0, 0.40);
+    --Secondary-Color-Secondary-5:#171c28;
+    --bg-bill:#171C28;
+    --Secondary-Color-Secondary-6:#171C28;
+    --hover-bill: #fff;
+    .triagle {
         display: none;
     }
-    @include abstracts.breakpoint(sm){
-        --bg-color-header: #171C28;
+    @include abstracts.breakpoint(sm) {
+        --bg-color-header: #171c28;
     }
 }

@@ -1,0 +1,89 @@
+@use "../abstracts";
+.categories {
+    margin-top: 40px;
+    @include abstracts.breakpoint(sm){
+       margin-top: 30px;
+    }
+    &__head {
+        color: var(--Secondary-Color-Secondary-1);
+        font-size: 2.4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.41;
+        @include abstracts.breakpoint(sm){
+           font-size: 2.2rem;
+        }
+    }
+    &__body {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include abstracts.breakpoint(lg){
+            flex-wrap: wrap;
+            row-gap: 10px;
+        }
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 20px 26px 20px 20px;
+        max-width: 413px;
+        border-radius: 16px;
+        column-gap: 20px;
+        background-color: var(--cato-item-color);
+        transition: 0.3s ease;
+        @include abstracts.breakpoint(lg){
+            width: 340px;
+            padding: 10px 16px 10px 10px;
+            column-gap: 10px;
+        }
+        @include abstracts.breakpoint(sm){
+            width: 100%;
+            padding: 20px 26px 20px 20px;
+            column-gap: 20px;
+        }
+        &--left {
+            width: 116px;
+            height: 116px;
+            background-color:var(--cate-item);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+        &--img {
+            width: 100%;
+            object-fit: cover;
+        }
+        &--price {
+            color: var(--color-price);
+            font-size: 2.2rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.45;
+            @include abstracts.breakpoint(sm){
+              font-size: 1.8rem;
+            }
+        }
+        &--desc {
+            margin-top: 6px;
+            color: var(--Secondary-Color-Secondary-1);
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; 
+            @include abstracts.breakpoint(sm){
+                font-size: 1.4rem;
+            }
+        }
+    }
+    .categories__item:hover{
+        transform: translateY(-20px);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        @include abstracts.breakpoint(lg){
+            transform: translateY(-10px);
+        }
+    }
+
+}

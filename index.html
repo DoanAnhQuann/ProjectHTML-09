@@ -42,16 +42,788 @@
         <!-- header -->
         <header id="header" class="head"></header>
         <script>
-            load("#header", "./templates/header.html")
-            </script>
-            <div class="container">
-            <main>
-                
-            </main>
+            load("#header", "./templates/header.html");
+        </script>
+        <div class="container">
+            <!-- slider -->
+            <div class="slider">
+                <div class="slider__inner">
+                    <div class="slider__inner--item">
+                        <picture>
+                            <source
+                                media="(max-width: 767.98px)"
+                                srcset="./assets/img/item-1-md.png"
+                            />
+                            <img
+                                src="./assets/img/item-1.png"
+                                alt=""
+                                class="slider__inner--img"
+                            />
+                        </picture>
+                    </div>
+
+                    <div class="slider__block">
+                        <span class="slider__number">1</span>
+                        <div class="slider__scroll-bar"></div>
+                        <span class="slider__number">5</span>
+                    </div>
+                </div>
+            </div>
+            <!-- categories -->
+            <div class="categories">
+                <h2 class="categories__head">Browse Categories</h2>
+                <div class="categories__body">
+                    <!-- item1 -->
+                    <div class="categories__item">
+                        <a href="#!" class="categories__item--left">
+                            <img
+                                src="./assets/img/categori1.png"
+                                alt=""
+                                class="categories__item--img"
+                            />
+                        </a>
+                        <div class="categories__item--right">
+                            <p class="categories__item--price">$24 - $150</p>
+                            <p class="categories__item--desc">
+                                New sumatra mandeling coffe blend
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item2 -->
+                    <div class="categories__item">
+                        <a href="#!" class="categories__item--left">
+                            <img
+                                src="./assets/img/categori2.png"
+                                alt=""
+                                class="categories__item--img"
+                            />
+                        </a>
+                        <div class="categories__item--right">
+                            <p class="categories__item--price">$37 - $160</p>
+                            <p class="categories__item--desc">
+                                Espresso arabica and robusta beans
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item3 -->
+                    <div class="categories__item">
+                        <a href="#!" class="categories__item--left">
+                            <img
+                                src="./assets/img/categori3.png"
+                                alt=""
+                                class="categories__item--img"
+                            />
+                        </a>
+                        <div class="categories__item--right">
+                            <p class="categories__item--price">$37 - $160</p>
+                            <p class="categories__item--desc">
+                                Lavazza top class whole bean coffee blend
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item4 -->
+                    <div class="categories__item d-none d-lg-flex">
+                        <a href="#!" class="categories__item--left">
+                            <img
+                                src="./assets/img/categori1.png"
+                                alt=""
+                                class="categories__item--img"
+                            />
+                        </a>
+                        <div class="categories__item--right">
+                            <p class="categories__item--price">$24 - $150</p>
+                            <p class="categories__item--desc">
+                                New sumatra mandeling coffe blend
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product -->
+            <div class="product">
+                <div class="product__body">
+                    <!-- top -->
+                    <div class="product__item--top">
+                        <h2 class="product__item--head">Total LavAzza 1320</h2>
+                        <label for="radio" class="product__item--right">
+                            <span class="product__item--fiter">Filter</span>
+                            <img
+                                src="./assets/icon/filter.svg"
+                                alt=""
+                                class="icon product__item--img"
+                            />
+                            <input
+                                type="radio"
+                                name="radio"
+                                id="radio"
+                                class="radio"
+                                hidden
+                            />
+                        </label>
+                    </div>
+                    <!-- filter -->
+                    <div class="filter">
+                        <div class="filter__body">
+                            <p class="filter__title">Filter</p>
+                            <div class="filter__item">
+                                <!-- item1 -->
+                                <div class="filter__list">
+                                    <p class="filter__title">Price</p>
+                                    <div class="filter__bar"></div>
+                                    <div class="filter__control">
+                                        <div class="filter__control--left">
+                                            <label
+                                                for=""
+                                                class="filter__control--min"
+                                                >Minimum</label
+                                            >
+                                            <input
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                placeholder="$30.00"
+                                                class="filter__input"
+                                            />
+                                        </div>
+                                        <div class="filter__control--right">
+                                            <label
+                                                for=""
+                                                class="filter__control--min"
+                                                >Maximum</label
+                                            >
+                                            <input
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                placeholder="$100.00"
+                                                class="filter__input"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter__br"></div>
+                                <!-- item 2 -->
+                                <div class="filter__list">
+                                    <p class="filter__title">Size/Weight</p>
+                                    <div class="filter__size">
+                                        <div class="filter__size-left">
+                                            <span class="filter__weight"
+                                                >500g</span
+                                            >
+                                            <img
+                                                src="./assets/icon/arrow1.svg"
+                                                alt=""
+                                                class="filter__arrow"
+                                            />
+                                        </div>
+                                        <div class="filter__size-left">
+                                            <div class="filter__barr"></div>
+                                            <span class="filter__weight gram"
+                                                >Gram</span
+                                            >
+                                            <img
+                                                src="./assets/icon/arrow1.svg"
+                                                alt=""
+                                                class="filter__arrow"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="filter__align">
+                                        <button class="filter__btn">
+                                            Small
+                                        </button>
+                                        <button class="filter__btn">
+                                            Medium
+                                        </button>
+                                        <button class="filter__btn">
+                                            Medium
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="filter__br"></div>
+                                <!-- item3 -->
+                                <div class="filter__list">
+                                    <p class="filter__title">Brand</p>
+                                    <div class="filter__block">
+                                        <input
+                                            type="text"
+                                            name="search"
+                                            id="search"
+                                            placeholder="Search brand name"
+                                            class="filter__input filter__input3"
+                                        />
+                                        <label for="search"
+                                            ><img
+                                                src="./assets/icon/search.svg"
+                                                alt=""
+                                                class="icon filter__search"
+                                        /></label>
+                                    </div>
+                                    <div class="filter__align">
+                                        <button class="filter__btn">
+                                            Lavazza
+                                        </button>
+                                        <button class="filter__btn">
+                                            Nescafe
+                                        </button>
+                                        <button class="filter__btn">
+                                            Starbucks
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__cancel">
+                                <div class="filter__cancel--btn1">
+                                    <label for="radioo" class="filter__back"
+                                        >Cancel</label
+                                    >
+                                    <input
+                                        type="radio"
+                                        name="radio"
+                                        id="radioo"
+                                        class="radioo"
+                                        hidden
+                                    />
+                                </div>
+                                <button class="filter__cancel--btn2">
+                                    <a href="#!" class="filter__show"
+                                        >Show Result</a
+                                    >
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- bottom -->
+                    <div class="product__item--bot">
+                        <!-- item 1 -->
+                        <div class="product__list">
+                            <a href="./bill.html">
+                                <!-- top -->
+                                <div class="product__list--top">
+                                    <img
+                                        src="./assets/img/product1.png"
+                                        alt=""
+                                        class="product__list--img"
+                                    />
+                                    <div class="product__list--heart">
+                                        <img
+                                            src="./assets/icon/heart.svg"
+                                            alt=""
+                                            class="icon product__list--icon"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- bot -->
+                                <div class="product__list--bot">
+                                    <h3 class="product__list--header">
+                                        Coffee Beans - Espresso Arabica and
+                                        Robusta Beans
+                                    </h3>
+                                    <p class="product__list--name">Lavazza</p>
+                                    <div class="product__list--prices">
+                                        <span class="product__list--price"
+                                            >$47.00</span
+                                        >
+                                        <div class="product__list--stars">
+                                            <img
+                                                src="./assets/icon/star1.svg"
+                                                alt=""
+                                                class="product__list--star"
+                                            />
+                                            <span class="product__list--number"
+                                                >4.3</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="product__list">
+                            <a href="./bill_coffee.html">
+                                <!-- top -->
+                                <div class="product__list--top">
+                                    <img
+                                        src="./assets/img/product2.png"
+                                        alt=""
+                                        class="product__list--img"
+                                    />
+                                    <div class="product__list--heart">
+                                        <img
+                                            src="./assets/icon/heart.svg"
+                                            alt=""
+                                            class="icon product__list--icon"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- bot -->
+                                <div class="product__list--bot">
+                                    <h3 class="product__list--header">
+                                        Lavazza Coffee Blends - Try the Italian
+                                        Espresso
+                                    </h3>
+                                    <p class="product__list--name">Lavazza</p>
+                                    <div class="product__list--prices">
+                                        <span class="product__list--price"
+                                            >$53.00</span
+                                        >
+                                        <div class="product__list--stars">
+                                            <img
+                                                src="./assets/icon/star1.svg"
+                                                alt=""
+                                                class="product__list--star"
+                                            />
+                                            <span class="product__list--number"
+                                                >3.4</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item 3 -->
+                        <div class="product__list">
+                            <a href="./bill_espresso.html">
+                                <!-- top -->
+                                <div class="product__list--top">
+                                    <img
+                                        src="./assets/img/product3.png"
+                                        alt=""
+                                        class="product__list--img"
+                                    />
+                                    <div class="product__list--heart">
+                                        <img
+                                            src="./assets/icon/heart-red.svg"
+                                            alt=""
+                                            class="product__list--icon1"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- bot -->
+                                <div class="product__list--bot">
+                                    <h3 class="product__list--header">
+                                        Lavazza - Caffè Espresso Black Tin -
+                                        Ground coffee
+                                    </h3>
+                                    <p class="product__list--name">
+                                        welikecoffee
+                                    </p>
+                                    <div class="product__list--prices">
+                                        <span class="product__list--price"
+                                            >$99.99</span
+                                        >
+                                        <div class="product__list--stars">
+                                            <img
+                                                src="./assets/icon/star1.svg"
+                                                alt=""
+                                                class="product__list--star"
+                                            />
+                                            <span class="product__list--number"
+                                                >5.0</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item 4 -->
+                        <div class="product__list">
+                            <a href="./bill_moutain.html">
+                                <!-- top -->
+                                <div class="product__list--top">
+                                    <img
+                                        src="./assets/img/product4.png"
+                                        alt=""
+                                        class="product__list--img"
+                                    />
+                                    <div class="product__list--heart">
+                                        <img
+                                            src="./assets/icon/heart.svg"
+                                            alt=""
+                                            class="icon product__list--icon"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- bot -->
+                                <div class="product__list--bot">
+                                    <h3 class="product__list--header">
+                                        Qualità Oro Mountain Grown - Espresso
+                                        Coffee Beans
+                                    </h3>
+                                    <p class="product__list--name">Lavazza</p>
+                                    <div class="product__list--prices">
+                                        <span class="product__list--price"
+                                            >$38.65</span
+                                        >
+                                        <div class="product__list--stars">
+                                            <img
+                                                src="./assets/icon/star1.svg"
+                                                alt=""
+                                                class="product__list--star"
+                                            />
+                                            <span class="product__list--number"
+                                                >4.4</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item 5 -->
+                        <div class="product__list">
+                            <a href="./bill_espresso.html">
+                                <!-- top -->
+                                <div class="product__list--top">
+                                    <img
+                                        src="./assets/img/product3.png"
+                                        alt=""
+                                        class="product__list--img"
+                                    />
+                                    <div class="product__list--heart">
+                                        <img
+                                            src="./assets/icon/heart-red.svg"
+                                            alt=""
+                                            class="product__list--icon1"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- bot -->
+                                <div class="product__list--bot">
+                                    <h3 class="product__list--header">
+                                        Lavazza - Caffè Espresso Black Tin -
+                                        Ground coffee
+                                    </h3>
+                                    <p class="product__list--name">
+                                        welikecoffee
+                                    </p>
+                                    <div class="product__list--prices">
+                                        <span class="product__list--price"
+                                            >$99.99</span
+                                        >
+                                        <div class="product__list--stars">
+                                            <img
+                                                src="./assets/icon/star1.svg"
+                                                alt=""
+                                                class="product__list--star"
+                                            />
+                                            <span class="product__list--number"
+                                                >5.0</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item 6 -->
+                        <div class="product__list">
+                            <a href="./bill.html">
+                                <!-- top -->
+                                <div class="product__list--top">
+                                    <img
+                                        src="./assets/img/product1.png"
+                                        alt=""
+                                        class="product__list--img"
+                                    />
+                                    <div class="product__list--heart">
+                                        <img
+                                            src="./assets/icon/heart.svg"
+                                            alt=""
+                                            class="icon product__list--icon"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- bot -->
+                                <div class="product__list--bot">
+                                    <h3 class="product__list--header">
+                                        Coffee Beans - Espresso Arabica and
+                                        Robusta Beans
+                                    </h3>
+                                    <p class="product__list--name">Lavazza</p>
+                                    <div class="product__list--prices">
+                                        <span class="product__list--price"
+                                            >$47.00</span
+                                        >
+                                        <div class="product__list--stars">
+                                            <img
+                                                src="./assets/icon/star1.svg"
+                                                alt=""
+                                                class="product__list--star"
+                                            />
+                                            <span class="product__list--number"
+                                                >4.3</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item 7 -->
+                        <div class="product__list">
+                            <a href="./bill_coffee.html">
+                                <!-- top -->
+                                <div class="product__list--top">
+                                    <img
+                                        src="./assets/img/product2.png"
+                                        alt=""
+                                        class="product__list--img"
+                                    />
+                                    <div class="product__list--heart">
+                                        <img
+                                            src="./assets/icon/heart.svg"
+                                            alt=""
+                                            class="icon product__list--icon"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- bot -->
+                                <div class="product__list--bot">
+                                    <h3 class="product__list--header">
+                                        Lavazza Coffee Blends - Try the Italian
+                                        Espresso
+                                    </h3>
+                                    <p class="product__list--name">Lavazza</p>
+                                    <div class="product__list--prices">
+                                        <span class="product__list--price"
+                                            >$53.00</span
+                                        >
+                                        <div class="product__list--stars">
+                                            <img
+                                                src="./assets/icon/star1.svg"
+                                                alt=""
+                                                class="product__list--star"
+                                            />
+                                            <span class="product__list--number"
+                                                >3.4</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item 8 -->
+                        <div class="product__list">
+                            <a href="./bill_moutain.html">
+                                <!-- top -->
+                                <div class="product__list--top">
+                                    <img
+                                        src="./assets/img/product4.png"
+                                        alt=""
+                                        class="product__list--img"
+                                    />
+                                    <div class="product__list--heart">
+                                        <img
+                                            src="./assets/icon/heart-red.svg"
+                                            alt=""
+                                            class="product__list--icon1"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- bot -->
+                                <div class="product__list--bot">
+                                    <h3 class="product__list--header">
+                                        Qualità Oro Mountain Grown - Espresso
+                                        Coffee Beans
+                                    </h3>
+                                    <p class="product__list--name">Lavazza</p>
+                                    <div class="product__list--prices">
+                                        <span class="product__list--price"
+                                            >$38.65</span
+                                        >
+                                        <div class="product__list--stars">
+                                            <img
+                                                src="./assets/icon/star1.svg"
+                                                alt=""
+                                                class="product__list--star"
+                                            />
+                                            <span class="product__list--number"
+                                                >4.4</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item 9 -->
+                        <div class="product__list">
+                            <a href="./bill_moutain.html">
+                                <!-- top -->
+                                <div class="product__list--top">
+                                    <img
+                                        src="./assets/img/product4.png"
+                                        alt=""
+                                        class="product__list--img"
+                                    />
+                                    <div class="product__list--heart">
+                                        <img
+                                            src="./assets/icon/heart-red.svg"
+                                            alt=""
+                                            class="product__list--icon1"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- bot -->
+                                <div class="product__list--bot">
+                                    <h3 class="product__list--header">
+                                        Qualità Oro Mountain Grown - Espresso
+                                        Coffee Beans
+                                    </h3>
+                                    <p class="product__list--name">Lavazza</p>
+                                    <div class="product__list--prices">
+                                        <span class="product__list--price"
+                                            >$38.65</span
+                                        >
+                                        <div class="product__list--stars">
+                                            <img
+                                                src="./assets/icon/star1.svg"
+                                                alt=""
+                                                class="product__list--star"
+                                            />
+                                            <span class="product__list--number"
+                                                >4.4</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item 10 -->
+                        <div class="product__list">
+                            <a href="./bill_coffee.html">
+                                <!-- top -->
+                                <div class="product__list--top">
+                                    <img
+                                        src="./assets/img/product2.png"
+                                        alt=""
+                                        class="product__list--img"
+                                    />
+                                    <div class="product__list--heart">
+                                        <img
+                                            src="./assets/icon/heart.svg"
+                                            alt=""
+                                            class="icon product__list--icon"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- bot -->
+                                <div class="product__list--bot">
+                                    <h3 class="product__list--header">
+                                        Lavazza Coffee Blends - Try the Italian
+                                        Espresso
+                                    </h3>
+                                    <p class="product__list--name">Lavazza</p>
+                                    <div class="product__list--prices">
+                                        <span class="product__list--price"
+                                            >$53.00</span
+                                        >
+                                        <div class="product__list--stars">
+                                            <img
+                                                src="./assets/icon/star1.svg"
+                                                alt=""
+                                                class="product__list--star"
+                                            />
+                                            <span class="product__list--number"
+                                                >3.4</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item 11 -->
+                        <div class="product__list">
+                            <a href="./bill_espresso.html">
+                                <!-- top -->
+                                <div class="product__list--top">
+                                    <img
+                                        src="./assets/img/product3.png"
+                                        alt=""
+                                        class="product__list--img"
+                                    />
+                                    <div class="product__list--heart">
+                                        <img
+                                            src="./assets/icon/heart-red.svg"
+                                            alt=""
+                                            class="product__list--icon1"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- bot -->
+                                <div class="product__list--bot">
+                                    <h3 class="product__list--header">
+                                        Lavazza - Caffè Espresso Black Tin -
+                                        Ground coffee
+                                    </h3>
+                                    <p class="product__list--name">
+                                        welikecoffee
+                                    </p>
+                                    <div class="product__list--prices">
+                                        <span class="product__list--price"
+                                            >$99.99</span
+                                        >
+                                        <div class="product__list--stars">
+                                            <img
+                                                src="./assets/icon/star1.svg"
+                                                alt=""
+                                                class="product__list--star"
+                                            />
+                                            <span class="product__list--number"
+                                                >5.0</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item 12 -->
+                        <div class="product__list">
+                            <a href="./bill.html">
+                                <!-- top -->
+                                <div class="product__list--top">
+                                    <img
+                                        src="./assets/img/product1.png"
+                                        alt=""
+                                        class="product__list--img"
+                                    />
+                                    <div class="product__list--heart">
+                                        <img
+                                            src="./assets/icon/heart.svg"
+                                            alt=""
+                                            class="icon product__list--icon"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- bot -->
+                                <div class="product__list--bot">
+                                    <h3 class="product__list--header">
+                                        Coffee Beans - Espresso Arabica and
+                                        Robusta Beans
+                                    </h3>
+                                    <p class="product__list--name">Lavazza</p>
+                                    <div class="product__list--prices">
+                                        <span class="product__list--price"
+                                            >$47.00</span
+                                        >
+                                        <div class="product__list--stars">
+                                            <img
+                                                src="./assets/icon/star1.svg"
+                                                alt=""
+                                                class="product__list--star"
+                                            />
+                                            <span class="product__list--number"
+                                                >4.3</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- footer -->
             <footer id="footer"></footer>
             <script>
-                load("#footer", "./templates/footer.html")
+                load("#footer", "./templates/footer.html");
             </script>
         </div>
     </body>
